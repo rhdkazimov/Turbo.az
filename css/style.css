@@ -1,0 +1,64 @@
+#vip-announcument #section-name {
+  margin-left: 20px;
+}
+#vip-announcument #advertising {
+  width: 400px;
+  height: 30px;
+}
+#vip-announcument .col-3:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+}
+#vip-announcument .col-3 img {
+  width: 100%;
+  height: 170px;
+}
+#vip-announcument .col-3 .car-price {
+  font-size: 20px;
+}
+
+#announcument #section-name {
+  margin-left: 20px;
+}
+#announcument .col-3:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+}
+#announcument .col-3 img {
+  width: 100%;
+  height: 170px;
+}
+#announcument .col-3 .car-price {
+  font-size: 20px;
+}
+
+#premium-announcument #section-name {
+  margin-left: 20px;
+}
+#premium-announcument .col-3:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+}
+#premium-announcument .col-3 img {
+  width: 100%;
+  height: 170px;
+}
+#premium-announcument .col-3 .car-price {
+  font-size: 20px;
+}
+
+#credit {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#credit #creditCheck {
+  opacity: 0;
+}
+
+#barter {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#barter #barterCheck {
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
