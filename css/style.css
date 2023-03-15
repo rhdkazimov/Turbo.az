@@ -27,9 +27,61 @@ main {
   margin: 0 auto;
 }
 
-.section-info {
+#credit {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  background-color: white;
+}
+#credit #creditCheck {
+  opacity: 0;
+}
+#credit #creditLabel {
+  padding-left: 5px;
+}
+
+#barter {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+#barter #barterCheck {
+  opacity: 0;
+}
+#barter #barterLabel {
+  padding-left: 5px;
+}
+
+#announcument .section-info {
   background-color: #f1f3f7;
   height: 50px;
+}
+#announcument .section-info #section-name {
+  margin-left: 20px;
+  margin-top: 12px;
+}
+#announcument .col-3 {
+  flex: 0 0 25%;
+  max-width: 22%;
+  border-radius: 10px;
+  margin: 5px 15px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+#announcument .col-3:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+}
+#announcument .col-3 img {
+  width: 100%;
+  height: 170px;
+}
+#announcument .col-3 .car-price {
+  font-size: 20px;
+}
+#announcument .col-3 .info {
+  background-color: white;
 }
 
 footer {
@@ -68,76 +120,85 @@ footer #innformation-advertising a {
   color: white;
 }
 
-#vip-announcument #section-name {
-  margin-left: 20px;
-  margin-top: 12px;
-}
-#vip-announcument #advertising {
-  width: 400px;
-  height: 30px;
-}
-#vip-announcument .col-3:hover {
-  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
-  border-radius: 10px;
-}
-#vip-announcument .col-3 img {
+.filter-min input{
+  position: absolute;
+  border:1px solid transparent;
+  top: 2px;
+  left: 2px;
+  outline: none;
+  padding: 23px 0 0px 6px;
+  border-radius: 7px 0 0 7px;
   width: 100%;
-  height: 170px;
+ 
 }
-#vip-announcument .col-3 .car-price {
-  font-size: 20px;
-}
+.filter-min span{
+position: absolute;
+z-index: 1;
+top: 16px;
+font-size: 15px;
+left: 8px;
+transition: .2s;
+font-family: Arial, Helvetica, sans-serif;
 
-#announcument #section-name {
-  margin-left: 20px;
-  margin-top: 12px;
 }
-#announcument .col-3:hover {
-  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
-  border-radius: 10px;
-}
-#announcument .col-3 img {
+.filter-min{
   width: 100%;
-  height: 170px;
+  height: 50px;
+  border-right: 1px solid #dfe3e9;
+  position: relative;
+  color: #8d94ad;
 }
-#announcument .col-3 .car-price {
-  font-size: 20px;
+.filter-min input:focus + .focus , .filter-min input:valid + .focus {
+  top: 8px;
+  font-size: 13px;
 }
 
-#premium-announcument #section-name {
-  margin-left: 20px;
-  margin-top: 12px;
-}
-#premium-announcument .col-3:hover {
-  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
-  border-radius: 10px;
-}
-#premium-announcument .col-3 img {
+.filter-max input{
+  position: absolute;
+  border:1px solid transparent;
+  top: 2px;
+  left: 2px;
+  outline: none;
+  padding: 23px 0 0px 6px;
   width: 100%;
-  height: 170px;
+  border-radius: 0 7px 7px 0;
+ 
 }
-#premium-announcument .col-3 .car-price {
-  font-size: 20px;
-}
+.filter-max span{
+position: absolute;
+z-index: 1;
+top: 16px;
+font-size: 15px;
+left: 8px;
+transition: .2s;
+font-family: Arial, Helvetica, sans-serif;
+color: #8d94ad;
 
-#credit {
-  border: 1px solid black;
-  border-radius: 5px;
-}
-#credit #creditCheck {
-  opacity: 0;
-}
-#credit #creditLabel {
-  padding-left: 5px;
-}
 
-#barter {
-  border: 1px solid black;
-  border-radius: 5px;
 }
-#barter #barterCheck {
-  opacity: 0;
+.filter-max{
+  width: 100%;
+  height: 50px;
+  border-left: 0px;
+  position: relative;
+  color: #8d94ad;
 }
-#barter #barterLabel {
-  padding-left: 5px;
+.filter-max input:focus + .focus , .filter-max input:valid + .focus {
+  top: 8px;
+  font-size: 13px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.filterPrice i {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: 25px;
+    cursor: pointer;
+}
+.display-none{
+    display: none !important;
 }/*# sourceMappingURL=style.css.map */
