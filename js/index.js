@@ -28,7 +28,7 @@ kredit.addEventListener("click", () => {
 });
 
 //#region car data
-let obj = [
+let cars = [
   {
     id: 1,
     city: "Bakı",
@@ -215,7 +215,7 @@ let obj = [
     distance: "73822KM",
     new: false,
     price: 23900,
-    exchange: "USD",
+    exchange: "AZN",
     credit: true,
     barter: true,
     img: "https://turbo.azstatic.com/uploads/f660x496/2023%2F03%2F13%2F09%2F07%2F04%2F27814eae-ef50-4292-89a3-a10f18fb8643%2F27245_WZkM6o5GC2Cee9VtsibvGw.jpg",
@@ -415,7 +415,7 @@ let obj = [
   },
 ];
 
-obj.forEach(function (item) {
+cars.forEach(function (item) {
   let card = `
   <div class="col-3 p-3">
     <div class="items border  rounded-lg">
@@ -622,18 +622,58 @@ minPrice.addEventListener("keyup", function () {
   let removeMinChar = this.value.replace(/[^0-9\.]/g, ""); // delete for text
   let removeMinDot = removeMinChar.replace(/\./g, "");
   this.value = removeMinDot;
-  let formatedNumber1 = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  this.value = formatedNumber1;
+  // let formatedNumber1 = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  // this.value = formatedNumber1;
 });
 
 maxPrice.addEventListener("keyup", function () {
   let removeMaxChar = this.value.replace(/[^0-9\.]/g, ""); // delete for text
   let removeMaxDot = removeMaxChar.replace(/\./g, ""); //
   this.value = removeMaxDot;
-  let formatedNumber2 = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  this.value = formatedNumber2;
+  // let formatedNumber2 = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  // this.value = formatedNumber2;
 });
 
 //#endregion
+
+
+const showBtn = document.querySelector("#showButton");
+
+showBtn.addEventListener("click",()=>{
+let filterModel = document.querySelector("#inputModel").value; 
+let filterMin = document.querySelector("#minPrice").value;
+let filterMax = document.querySelector("#maxPrice").value;
+
+filterShow(filterModel,filterMin,filterMax)
+})
+
+function filterShow(Model,minprice,maxprice){
+  anounces.innerHTML="";
+  cars.forEach(function (item){
+    if(item.model==Model&&minprice<=item.price<=maxprice){
+      let card = `
+  <div class="col-3 p-3">
+    <div class="items border  rounded-lg">
+      <img
+        src="${item.img}"
+        alt="${item.model}"
+      />
+      <div class="info pl-3">
+        <div class="car-price font-weight-bold">
+          <span>${item.price} ${item.exchange}</span>
+        </div>
+        <div class="car-name"><span>${item.brand}</span></div>
+        <div class="car-info">
+          <span> ${item.year}, ${item.engine} L, ${item.distance}</span>
+        </div>
+        <div class="announce-info">
+          <span> ${item.city}, dunen 13:53</span>
+        </div>
+      </div>
+    </div>`;
+  anounces.innerHTML += card;
+    }
+  })
+}
 
 
