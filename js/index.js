@@ -646,14 +646,18 @@ showBtn.addEventListener("click", () => {
   let filterMin = document.querySelector("#minPrice").value;
   let filterMax = document.querySelector("#maxPrice").value;
 
-  filterShow(filterBrand,filterModel, filterMin, filterMax);
+  filterShow(filterBrand, filterModel, filterMin, filterMax);
 });
 
-function filterShow(Brand,Model, minprice, maxprice) {
+function filterShow(Brand, Model, minprice, maxprice) {
   anounces.innerHTML = "";
   cars.forEach(function (item) {
-
-    if (item.brand == Brand && Model == Brand && minprice=="" && maxprice=="") {
+    if (
+      item.brand == Brand &&
+      Model == Brand &&
+      minprice == "" &&
+      maxprice == ""
+    ) {
       let card = `
   <div class="col-3 p-3">
     <div class="items border  rounded-lg">
@@ -676,7 +680,12 @@ function filterShow(Brand,Model, minprice, maxprice) {
     </div>`;
       anounces.innerHTML += card;
     }
-    if (item.model == Model && item.brand == Brand && minprice<=item.price && maxprice=="") {
+    if (
+      item.model == Model &&
+      item.brand == Brand &&
+      minprice <= item.price &&
+      maxprice == ""
+    ) {
       let card = `
   <div class="col-3 p-3">
     <div class="items border  rounded-lg">
@@ -699,7 +708,12 @@ function filterShow(Brand,Model, minprice, maxprice) {
     </div>`;
       anounces.innerHTML += card;
     }
-    if (item.model == Model && item.brand == Brand && minprice<=item.price && maxprice>=item.price) {
+    if (
+      item.model == Model &&
+      item.brand == Brand &&
+      minprice <= item.price &&
+      maxprice >= item.price
+    ) {
       let card = `
   <div class="col-3 p-3">
     <div class="items border  rounded-lg">
@@ -814,5 +828,121 @@ addCarSumbitBtn.addEventListener("click", (e) => {
   document.querySelector("#announcument").style.display = "block";
   document.querySelector("#register").style.display = "none";
 });
+
+//#endregion
+
+//#region
+
+document.querySelector("#MainPageBtn").addEventListener("click",()=>{
+  document.querySelector("#searching").style.display = "block";
+  document.querySelector("#announcument").style.display = "block";
+  document.querySelector("#editCarArea").style.display = "none";
+})
+
+const editCarsBtn = document.querySelector("#editCarsBtn");
+
+editCarsBtn.addEventListener("click", () => {
+  document.querySelector("#searching").style.display = "none";
+  document.querySelector("#announcument").style.display = "none";
+  document.querySelector("#editCarArea").style.display = "block";
+  const SearchTable = document.querySelector("#myTable");
+  cars.forEach(function (item) {
+    let card = `
+    <tr>
+        <td>${item.brand}</td>
+        <td>${item.model}</td>
+    </tr>    
+    `;
+    SearchTable.innerHTML += card;
+  });
+});
+
+document.querySelector("#myInput").addEventListener("keyup", () => {
+  const SearchTable = document.querySelector("#myTable");
+  cars.forEach(function (item) {
+    let card = `
+    <tr>
+        <td>${item.brand}</td>
+        <td>${item.model}</td>
+    </tr>    
+    `;
+    SearchTable.innerHTML += card;
+  });
+
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+});
+
+document.querySelector("#delete").addEventListener("click",()=>{
+  document.querySelector("#searching").style.display = "none";
+  document.querySelector("#announcument").style.display = "none";
+  document.querySelector("#editCarArea").style.display = "none";
+  document.querySelector("#deletearea").style.display = "block";
+})
+
+const deleteBtn = document.querySelector("#deleteBtn");
+
+deleteBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  const deleteId = document.querySelector("#deleteid").value;
+
+  cars.forEach(
+    function(item){
+      if(item.id==deleteId)
+      {
+       delete cars[deleteId-1];
+       anounces.innerHTML="";
+      }
+    }
+  )
+cars.forEach(
+  function(item){
+    let card = `
+    <div class="col-3 p-3">
+      <div class="items border  rounded-lg">
+        <img
+          src="${item.img}"
+          alt="${item.model}"
+        />
+        <div class="info pl-3">
+          <div class="car-price font-weight-bold">
+            <span>${item.price} ${item.exchange}</span>
+          </div>
+          <div class="car-name"><span>${item.brand}</span></div>
+          <div class="car-info">
+            <span> ${item.year}, ${item.engine} L, ${item.distance} km</span>
+          </div>
+          <div class="announce-info">
+            <span> ${item.city}, dunen 13:53</span>
+          </div>
+        </div>
+      </div>`;
+      anounces.innerHTML += card;
+    });
+  }
+)
+
+document.querySelector("#deleteAfterMain").addEventListener("click",(e)=>{
+  e.preventDefault();
+  document.querySelector("#searching").style.display = "block";
+  document.querySelector("#announcument").style.display = "block";
+  document.querySelector("#editCarArea").style.display = "none";
+  document.querySelector("#deletearea").style.display = "none";
+})
+
 
 //#endregion
