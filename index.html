@@ -30,14 +30,17 @@
     <header>
       <div id="header" class="d-flex justify-content-between">
         <div class="navbar">
-          <a class="font-weight-bold" href="#">TURBO.AZ</a>
+          <a id="mainmenu" class="font-weight-bold" href="./index.html">TURBO.AZ</a>
           <a href="#">Bütün elanlar</a>
           <a href="#">Avtosalonlar</a>
           <a href="#">Ehtiyyat hisseleri və aksesuarlar</a>
         </div>
         <div class="button">
           <button id="addNewCarBtn" class="btn btn-success">Yeni Elan</button>
+          <button id="editCarsBtn" class="btn btn-warning">Duzelis Etmek</button>
+          <button id="delete" class="btn btn-info">Silmek</button>
         </div>
+        
       </div>
     </header>
     <!-- Header End -->
@@ -321,7 +324,7 @@
       </section>
       <!-- Announcument Section End -->
 
-      <!-- New Announcument Section Start -->
+      <!--Add New Announcument Section Start -->
       <section id="register" class="mb-5">
         <div class="container">
           <div class="row d-flex flex-wrap">
@@ -565,7 +568,38 @@
           </div>
         </div>
       </section>
-      <!-- New Announcument Section End -->
+      <!--Add New Announcument Section End -->
+
+      <!-- delete section start -->
+<section id="deletearea">
+  <form>
+    <div class="form-group">
+      <label for="deleteid">Elan ID qeyd edin</label>
+      <input type="number" class="form-control" id="deleteid" aria-describedby="deleteid">
+    </div>
+    <div class="delete-button">
+      <button id="deleteBtn" class="btn btn-primary">Silmek</button>
+<button id="deleteAfterMain" class="btn btn-warning">Esas Sehife</button>
+    </div>
+  </form>
+</section>
+      <!-- delete section end -->
+
+<!-- Search Car Section Start -->
+<section id="editCarArea">
+  <input type="text" id="myInput"  placeholder="Search for names.." title="Type in a name">
+  <div class="editButton d-flex justify-content-end ">
+    <button id="MainPageBtn" class=" btn btn-warning btn-lg mb-2">Main Page</button>
+  </div>
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:60%;">Marka :</th>
+      <th style="width:40%;">Model :</th>
+    </tr>
+  </table>
+
+</section>
+<!-- Search Car Section End -->
 
       <!-- MyCarousel Section Start -->
       <section id="myCarousel" class="carousel slide" data-ride="carousel">
