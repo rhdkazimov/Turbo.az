@@ -552,7 +552,144 @@ let modelsOfAudi = [
   "RS7",
 ];
 
-let modelsOfBrand = [modelsOfMercedes, modelsOfBmw, modelsOfAudi];
+let modelsOfHyundai = [
+  "Hyundai",
+  "Accent",
+  "Atos",
+  "Azera",
+  "County",
+  "Coupe",
+  "Creta",
+  "Elantra",
+  "Equus",
+  "Excel",
+  "Galloper",
+  "Genesis",
+  "Genesis Coupe",
+  "Getz",
+  "Grand Santa Fe",
+  "Grandeur",
+  "H 100",
+  "H 350",
+  "H-1",
+  "HD-45",
+  "HD-65",
+  "HD-72",
+  "HD-78",
+  "Kona",
+  "Matrix",
+  "Palisade",
+  "Santa Cruz",
+  "Santa Fe",
+  "Sonata",
+  "Staria",
+  "Super Aero City",
+  "Terracan",
+  "Tiburon",
+  "Tucson",
+  "Veloster",
+  "Venue",
+  "Veracruz",
+  "Verna",
+  "XG",
+  "i10",
+  "i30",
+  "i40",
+  "ix35",
+  "ix55",
+];
+
+let modelsOfKia = [
+
+  "Avella",
+  "Bongo",
+  "Cadenza",
+  "Carens",
+  "Carnival",
+  "Ceed",
+  "Ceed GT",
+  "Cerato",
+  "Cerato Koup",
+  "Clarus",
+  "EV6",
+  "K2700",
+  "K3",
+  "K5",
+  "K7",
+  "K8",
+  "Magentis",
+  "Mohave",
+  "Niro",
+  "Opirus",
+  "Optima",
+  "Picanto",
+  "Pregio",
+  "Pride",
+  "ProCeed",
+  "Quoris",
+  "Rio",
+  "Rio X-Line",
+  "Seltos",
+  "Sephia",
+  "Shuma",
+  "Sorento",
+  "Soul",
+  "Spectra",
+  "Sportage",
+  "Stinger",
+  "Stonic",
+
+];
+
+
+let modelsOfBentley = [
+  "Bentley",
+  "Bentayga",
+  "Brooklands",
+  "Continental",
+  "Continental Flying Spur",
+  "Continental GT",
+  "Flying Spur",
+];
+
+let modelsOfMaserati = [ 
+  "Ghibli",
+  "GranTurismo",
+  "GranTurismo S",
+  "Quattroporte",
+];
+
+let modelsOfCadillac =[
+
+  "ATS",
+  "BLS",
+  "CT5",
+  "CT6",
+  "CTS",
+  "Escalade",
+  "SRX",
+  "XTS",
+];
+
+let modelsOfLamborghini=[
+  "Aventador",
+  "Gallardo",
+  "Huracan",
+  "Urus",
+];
+
+let modelsOfLandRover = [
+  "Defender",
+  "Discovery",
+  "Discovery Sport",
+  "Freelander",
+  "RR Evoque",
+  "RR Sport",
+  "RR Velar",
+  "Range Rover",
+];
+
+let modelsOfBrand = [modelsOfMercedes, modelsOfBmw, modelsOfAudi,modelsOfHyundai,modelsOfKia,modelsOfBentley,modelsOfMaserati,modelsOfCadillac];
 
 const inputBrand = document.querySelector("#inputBrand");
 const inputModel = document.querySelector("#inputModel");
@@ -944,5 +1081,9 @@ document.querySelector("#deleteAfterMain").addEventListener("click",(e)=>{
   document.querySelector("#deletearea").style.display = "none";
 })
 
-
+window.onload=function(){
+  setTimeout(function(){
+    document.getElementById('intro-video').style.display='none';
+  },3000);
+}
 //#endregion
