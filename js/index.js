@@ -36,7 +36,7 @@ let cars = [
     model: "SantaFe",
     year: 2001,
     engine: "2.0L",
-    distance: "258555KM",
+    distance: "258555",
     new: false,
     price: 10500,
     exchange: "AZN",
@@ -52,7 +52,7 @@ let cars = [
     model: "SantaFe",
     year: 2002,
     engine: "2.0L",
-    distance: "465570KM",
+    distance: "465570",
     new: false,
     price: 12300,
     exchange: "AZN",
@@ -68,7 +68,7 @@ let cars = [
     model: "Tucson",
     year: 2009,
     engine: "2.0L",
-    distance: "144000KM",
+    distance: "144000",
     new: false,
     price: 24500,
     exchange: "AZN",
@@ -84,7 +84,7 @@ let cars = [
     model: "SantaFe",
     year: 2011,
     engine: "2.4L",
-    distance: "180000KM",
+    distance: "180000",
     new: false,
     price: 25000,
     exchange: "AZN",
@@ -100,7 +100,7 @@ let cars = [
     model: "Tucson",
     year: 2013,
     engine: "2.0L",
-    distance: "117758KM",
+    distance: "117758",
     new: false,
     price: 27500,
     exchange: "AZN",
@@ -116,7 +116,7 @@ let cars = [
     model: "Tucson",
     year: 2013,
     engine: "2.0L",
-    distance: "135000KM",
+    distance: "135000",
     new: false,
     price: 27500,
     exchange: "AZN",
@@ -132,7 +132,7 @@ let cars = [
     model: "Elantra",
     year: 2017,
     engine: "2.0L",
-    distance: "59821KM",
+    distance: "59821",
     new: false,
     price: 26400,
     exchange: "AZN",
@@ -148,7 +148,7 @@ let cars = [
     model: "Elantra",
     year: 2020,
     engine: "1.6L",
-    distance: "61900KM",
+    distance: "61900",
     new: false,
     price: 35900,
     exchange: "AZN",
@@ -164,7 +164,7 @@ let cars = [
     model: "Elantra",
     year: 2022,
     engine: "1.6L",
-    distance: "0KM",
+    distance: "0",
     new: true,
     price: 37900,
     exchange: "AZN",
@@ -180,7 +180,7 @@ let cars = [
     model: "SantaCruz",
     year: 2022,
     engine: "2.5L",
-    distance: "3064KM",
+    distance: "3064",
     new: false,
     price: 38500,
     exchange: "USD",
@@ -196,7 +196,7 @@ let cars = [
     model: "740",
     year: 2022,
     engine: "3.0L",
-    distance: "0KM",
+    distance: "0",
     new: true,
     price: 153000,
     exchange: "EUR",
@@ -212,7 +212,7 @@ let cars = [
     model: "330",
     year: 2017,
     engine: "2.0L",
-    distance: "73822KM",
+    distance: "73822",
     new: false,
     price: 23900,
     exchange: "AZN",
@@ -228,7 +228,7 @@ let cars = [
     model: "525",
     year: 2007,
     engine: "2.5L",
-    distance: "218000KM",
+    distance: "218000",
     new: false,
     price: 21600,
     exchange: "USD",
@@ -244,7 +244,7 @@ let cars = [
     model: "X5",
     year: 2005,
     engine: "4.4L",
-    distance: "187917KM",
+    distance: "187917",
     new: false,
     price: 25500,
     exchange: "AZN",
@@ -260,7 +260,7 @@ let cars = [
     model: "430",
     year: 2016,
     engine: "2.0L",
-    distance: "111000KM",
+    distance: "111000",
     new: false,
     price: 26000,
     exchange: "USD",
@@ -276,7 +276,7 @@ let cars = [
     model: "320",
     year: 2007,
     engine: "2.0L",
-    distance: "390000KM",
+    distance: "390000",
     new: false,
     price: 17500,
     exchange: "AZN",
@@ -292,7 +292,7 @@ let cars = [
     model: "X5",
     year: 2019,
     engine: "3.0L",
-    distance: "53000KM",
+    distance: "53000",
     new: false,
     price: 75000,
     exchange: "USD",
@@ -308,7 +308,7 @@ let cars = [
     model: "530e",
     year: 2018,
     engine: "2.0L",
-    distance: "102000KM",
+    distance: "102000",
     new: false,
     price: 42000,
     exchange: "USD",
@@ -324,7 +324,7 @@ let cars = [
     model: "X7",
     year: 2022,
     engine: "3.0L",
-    distance: "0KM",
+    distance: "0",
     new: true,
     price: 147500,
     exchange: "USD",
@@ -340,7 +340,7 @@ let cars = [
     model: "M5",
     year: 2019,
     engine: "4.4L",
-    distance: "50000KM",
+    distance: "50000",
     new: false,
     price: 102000,
     exchange: "USD",
@@ -356,7 +356,7 @@ let cars = [
     model: "GLE 450",
     year: 2022,
     engine: "3.0L",
-    distance: "0KM",
+    distance: "0",
     new: true,
     price: 118500,
     exchange: "USD",
@@ -372,7 +372,7 @@ let cars = [
     model: "C 220",
     year: 2021,
     engine: "2.0L",
-    distance: "21600KM",
+    distance: "21600",
     new: false,
     price: 52800,
     exchange: "USD",
@@ -388,7 +388,7 @@ let cars = [
     model: "G 63 AMG",
     year: 2020,
     engine: "4.0L",
-    distance: "8100KM",
+    distance: "8100",
     new: false,
     price: 295000,
     exchange: "USD",
@@ -404,7 +404,7 @@ let cars = [
     model: "C 240",
     year: 1999,
     engine: "2.4L",
-    distance: "300000KM",
+    distance: "300000",
     new: false,
     price: 3500,
     exchange: "AZN",
@@ -429,7 +429,7 @@ cars.forEach(function (item) {
         </div>
         <div class="car-name"><span>${item.brand}</span></div>
         <div class="car-info">
-          <span> ${item.year}, ${item.engine} L, ${item.distance}</span>
+          <span> ${item.year}, ${item.engine} L, ${item.distance} km</span>
         </div>
         <div class="announce-info">
           <span> ${item.city}, dunen 13:53</span>
@@ -441,7 +441,9 @@ cars.forEach(function (item) {
 //#endregion
 
 //#region Filter Model Start
+
 let modelsOfMercedes = [
+  "Mercedes",
   "A 140",
   "A 150",
   "A 160",
@@ -492,6 +494,7 @@ let modelsOfMercedes = [
   "E 270",
 ];
 let modelsOfBmw = [
+  "BMW",
   "116",
   "118",
   "120",
@@ -526,6 +529,7 @@ let modelsOfBmw = [
   "545",
 ];
 let modelsOfAudi = [
+  "AUDI",
   "80",
   "90",
   "A1",
@@ -556,18 +560,15 @@ const inputModel = document.querySelector("#inputModel");
 inputBrand.addEventListener("change", () => {
   const defaultModelOpt = document.querySelector("#defaultModelOption");
   for (let i = 0; i < modelsOfBrand.length; i++) {
-    console.log(modelsOfBrand[i].length);
-    if (modelsOfBrand[i].length == inputBrand.value) {
+    if (modelsOfBrand[i][0] == inputBrand.value) {
       if (inputModel.innerHTML == defaultModelOpt) {
         modelsOfBrand[i].forEach(function (model) {
-          // console.log("itemforeach");
           let modelCard = `<option>${model}</option>`;
           inputModel.innerHTML += modelCard;
         });
       } else {
         inputModel.innerHTML = "";
         modelsOfBrand[i].forEach(function (model) {
-          // console.log("itemforeach");
           let modelCard = `<option>${model}</option>`;
           inputModel.innerHTML += modelCard;
         });
@@ -636,21 +637,23 @@ maxPrice.addEventListener("keyup", function () {
 
 //#endregion
 
-
+//#region  showBTN
 const showBtn = document.querySelector("#showButton");
 
-showBtn.addEventListener("click",()=>{
-let filterModel = document.querySelector("#inputModel").value; 
-let filterMin = document.querySelector("#minPrice").value;
-let filterMax = document.querySelector("#maxPrice").value;
+showBtn.addEventListener("click", () => {
+  let filterBrand = document.querySelector("#inputBrand").value;
+  let filterModel = document.querySelector("#inputModel").value;
+  let filterMin = document.querySelector("#minPrice").value;
+  let filterMax = document.querySelector("#maxPrice").value;
 
-filterShow(filterModel,filterMin,filterMax)
-})
+  filterShow(filterBrand,filterModel, filterMin, filterMax);
+});
 
-function filterShow(Model,minprice,maxprice){
-  anounces.innerHTML="";
-  cars.forEach(function (item){
-    if(item.model==Model&&minprice<=item.price<=maxprice){
+function filterShow(Brand,Model, minprice, maxprice) {
+  anounces.innerHTML = "";
+  cars.forEach(function (item) {
+
+    if (item.brand == Brand && Model == Brand && minprice=="" && maxprice=="") {
       let card = `
   <div class="col-3 p-3">
     <div class="items border  rounded-lg">
@@ -671,9 +674,145 @@ function filterShow(Model,minprice,maxprice){
         </div>
       </div>
     </div>`;
-  anounces.innerHTML += card;
+      anounces.innerHTML += card;
     }
-  })
+    if (item.model == Model && item.brand == Brand && minprice<=item.price && maxprice=="") {
+      let card = `
+  <div class="col-3 p-3">
+    <div class="items border  rounded-lg">
+      <img
+        src="${item.img}"
+        alt="${item.model}"
+      />
+      <div class="info pl-3">
+        <div class="car-price font-weight-bold">
+          <span>${item.price} ${item.exchange}</span>
+        </div>
+        <div class="car-name"><span>${item.brand}</span></div>
+        <div class="car-info">
+          <span> ${item.year}, ${item.engine} L, ${item.distance}</span>
+        </div>
+        <div class="announce-info">
+          <span> ${item.city}, dunen 13:53</span>
+        </div>
+      </div>
+    </div>`;
+      anounces.innerHTML += card;
+    }
+    if (item.model == Model && item.brand == Brand && minprice<=item.price && maxprice>=item.price) {
+      let card = `
+  <div class="col-3 p-3">
+    <div class="items border  rounded-lg">
+      <img
+        src="${item.img}"
+        alt="${item.model}"
+      />
+      <div class="info pl-3">
+        <div class="car-price font-weight-bold">
+          <span>${item.price} ${item.exchange}</span>
+        </div>
+        <div class="car-name"><span>${item.brand}</span></div>
+        <div class="car-info">
+          <span> ${item.year}, ${item.engine} L, ${item.distance}</span>
+        </div>
+        <div class="announce-info">
+          <span> ${item.city}, dunen 13:53</span>
+        </div>
+      </div>
+    </div>`;
+      anounces.innerHTML += card;
+    }
+  });
 }
 
+//#endregion
 
+//#region AddNewAnnouncument
+
+const addCarBtn = document.querySelector("#addNewCarBtn");
+
+addCarBtn.addEventListener("click", () => {
+  document.querySelector("#searching").style.display = "none";
+  document.querySelector("#announcument").style.display = "none";
+  document.querySelector("#register").style.display = "block";
+});
+
+const inputAddBrand = document.querySelector("#cars");
+const inputAddModel = document.querySelector("#models");
+
+inputAddBrand.addEventListener("change", () => {
+  const defaultModelOpt = document.querySelector("#addModelDefaultOption");
+  for (let i = 0; i < modelsOfBrand.length; i++) {
+    if (modelsOfBrand[i][0] == inputAddBrand.value) {
+      if (inputAddModel.innerHTML == defaultModelOpt) {
+        modelsOfBrand[i].forEach(function (model) {
+          let modelCard = `<option>${model}</option>`;
+          inputAddModel.innerHTML += modelCard;
+        });
+      } else {
+        inputAddModel.innerHTML = "";
+        modelsOfBrand[i].forEach(function (model) {
+          let modelCard = `<option>${model}</option>`;
+          inputAddModel.innerHTML += modelCard;
+        });
+      }
+    }
+  }
+});
+
+const addCarSumbitBtn = document.querySelector("#addCarSumbit");
+
+addCarSumbitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const inputAddImg = document.querySelector("#addCarimg").value;
+  const inputAddYear = document.querySelector("#addCarYear").value;
+  const inputAddDistance = document.querySelector("#addCarDistance").value;
+  const inputAddEngine = document.querySelector("#addCarEngine").value;
+  const inputAddPrice = document.querySelector("#addCarPrice").value;
+
+  cars[cars.length] = {
+    id: cars.length + 1,
+    city: "Baki",
+    brand: inputAddBrand.value, // `${inputAddBrand}`,
+    model: inputAddModel.value, //`${inputAddModel.value}`,
+    year: inputAddYear,
+    engine: inputAddEngine, //`${inputAddEngine}`,
+    distance: inputAddDistance, //`${inputAddDistance}`,
+    new: false,
+    price: inputAddPrice,
+    exchange: "AZN",
+    credit: false,
+    barter: true,
+    img: inputAddImg, // `${inputAddImg}`,
+    link: "https://turbo.az/autos/6438427-bmw-430",
+  };
+  anounces.innerHTML = "";
+  cars.forEach(function (item) {
+    let card = `
+  <div class="col-3 p-3">
+    <div class="items border  rounded-lg">
+      <img
+        src="${item.img}"
+        alt="${item.model}"
+      />
+      <div class="info pl-3">
+        <div class="car-price font-weight-bold">
+          <span>${item.price} ${item.exchange}</span>
+        </div>
+        <div class="car-name"><span>${item.brand}</span></div>
+        <div class="car-info">
+          <span> ${item.year}, ${item.engine} L, ${item.distance} km</span>
+        </div>
+        <div class="announce-info">
+          <span> ${item.city}, dunen 13:53</span>
+        </div>
+      </div>
+    </div>`;
+    anounces.innerHTML += card;
+  });
+  document.querySelector("#searching").style.display = "block";
+  document.querySelector("#announcument").style.display = "block";
+  document.querySelector("#register").style.display = "none";
+});
+
+//#endregion
