@@ -84,6 +84,32 @@ main {
   background-color: white;
 }
 
+#register {
+  display: none;
+}
+#register .tittle {
+  height: 60px;
+  padding: 0 20px;
+}
+#register select {
+  width: 285px;
+  border-radius: 5px;
+  height: 32px;
+}
+#register input {
+  border-radius: 5px;
+  height: 32px;
+}
+#register input.wide {
+  width: 80px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
 footer {
   width: 1080px !important;
   margin: 0 auto;
@@ -201,4 +227,5 @@ input::-webkit-inner-spin-button {
 }
 .display-none{
     display: none !important;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
